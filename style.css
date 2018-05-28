@@ -1,0 +1,37 @@
+body {
+  background-color: red;
+}
+
+.small {
+  font-size: 50%;
+}
+
+.medium, .large {
+  color: red;
+}
+
+@media only screen and (min-width: 300px) {
+  body {
+    background-color: green;
+  }
+  .small,.large {
+    color: green;
+  }
+  .medium {
+    color: black;
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: blue;
+  }
+  .medium, .small {
+    color: blue;
+  }
+  .large {
+    color: black;
+    font-size: 150%;
+  }
+}
